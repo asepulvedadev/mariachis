@@ -44,7 +44,42 @@ import Footer from "../components/Footer.astro";
 
   <!-- Footer -->
   <Footer />
+  <link
+    href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+    rel="stylesheet"
+  />
+  <script type="module">
+    import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
 
+    createChat({
+      webhookUrl:
+        "https://asepulvedadev.app.n8n.cloud/webhook/ee7f1c2e-0262-4707-8359-d9c1a36efbd3/chat",
+      webhookConfig: {
+        method: "POST",
+        headers: {},
+      },
+      target: "#n8n-chat",
+      mode: "window",
+      chatInputKey: "chatInput",
+      chatSessionKey: "sessionId",
+      metadata: {},
+      showWelcomeScreen: false,
+      defaultLanguage: "es",
+      initialMessages: [
+        "hola! 👋",
+        "mi nombre es mariachibot. como puedo ayudarte hoy?",
+      ],
+      i18n: {
+        es: {
+          title: "Bienvenido! 👋",
+          subtitle: "inicia tu chat. atendemos 24/7.",
+          footer: "",
+          getStarted: "nueva conversacion",
+          inputPlaceholder: "cual es tu pregunta..",
+        },
+      },
+    });
+  </script>
   <!-- AOS Initialization -->
   <script is:inline>
     // Inicializar AOS cuando el DOM esté cargado

@@ -1,0 +1,135 @@
+---
+// Hero.astro
+---
+
+<section
+  id="inicio"
+  class="relative min-h-screen flex items-center pt-24 overflow-hidden"
+>
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-mariachi-pattern opacity-10 z-0"></div>
+
+  <!-- Background Gradient -->
+  <div
+    class="absolute inset-0 bg-gradient-to-b from-mariachi-secondary/10 to-mariachi-light/80 z-0"
+  >
+  </div>
+
+  <div class="container mx-auto relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="text-center lg:text-left" data-aos="fade-right">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-mariachi-dark"
+        >
+          <span class="text-mariachi-primary">Mariachi</span> Alma de México
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-mariachi-secondary">
+          La auténtica música mexicana para tus eventos especiales
+        </p>
+        <p
+          class="text-lg mb-10 text-mariachi-dark/80 max-w-2xl mx-auto lg:mx-0"
+        >
+          Llevamos el alma de México a tu celebración con nuestra pasión,
+          talento y tradición. Más de 15 años creando momentos inolvidables.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+        >
+          <a href="#contacto" class="btn-primary">
+            <i class="fas fa-music mr-2"></i> Reserva Ahora
+          </a>
+          <a href="#servicios" class="btn-secondary">
+            <i class="fas fa-info-circle mr-2"></i> Nuestros Servicios
+          </a>
+        </div>
+
+        <!-- Social Media -->
+        <div class="mt-12 flex justify-center lg:justify-start space-x-6">
+          <a
+            href="#"
+            class="text-mariachi-secondary hover:text-mariachi-primary transition-colors duration-300"
+          >
+            <i class="fab fa-facebook-f text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-mariachi-secondary hover:text-mariachi-primary transition-colors duration-300"
+          >
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-mariachi-secondary hover:text-mariachi-primary transition-colors duration-300"
+          >
+            <i class="fab fa-youtube text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-mariachi-secondary hover:text-mariachi-primary transition-colors duration-300"
+          >
+            <i class="fab fa-tiktok text-2xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="relative" data-aos="fade-left">
+        <!-- Decorative Elements -->
+        <div
+          class="absolute -top-10 -left-10 w-32 h-32 bg-mariachi-accent rounded-full opacity-20 animate-pulse"
+        >
+        </div>
+        <div
+          class="absolute -bottom-10 -right-10 w-40 h-40 bg-mariachi-primary rounded-full opacity-20 animate-pulse"
+        >
+        </div>
+
+        <!-- Main Image -->
+        <div
+          class="relative z-10 rounded-lg overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-500"
+        >
+          <img
+            src="/images/mariachi-hero.jpg"
+            alt="Mariachi Alma de México en presentación"
+            class="w-full h-auto"
+            onerror="this.src='https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'; this.onerror=null;"
+          />
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute -bottom-5 -right-5 bg-mariachi-accent text-mariachi-dark font-bold py-3 px-6 rounded-full shadow-lg transform rotate-12 text-sm md:text-base"
+          >
+            ¡Primera serenata gratis!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div
+      class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center"
+    >
+      <a
+        href="#nosotros"
+        class="text-mariachi-dark/70 hover:text-mariachi-primary transition-colors duration-300"
+      >
+        <p class="mb-2 text-sm">Descubre más</p>
+        <i class="fas fa-chevron-down animate-bounce text-xl"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Simple parallax effect for the hero section
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const heroSection = document.getElementById("inicio");
+
+    if (heroSection) {
+      const background = heroSection.querySelector(".bg-mariachi-pattern");
+      if (background instanceof HTMLElement) {
+        background.style.transform = `translateY(${scrollY * 0.2}px)`;
+      }
+    }
+  });
+</script>

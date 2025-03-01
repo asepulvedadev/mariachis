@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Nosotros from "../components/Nosotros.astro";
+import Servicios from "../components/Servicios.astro";
+import Repertorio from "../components/Repertorio.astro";
+import Galeria from "../components/Galeria.astro";
+import Testimonios from "../components/Testimonios.astro";
+import Contacto from "../components/Contacto.astro";
+import Footer from "../components/Footer.astro";
+
+// Importar biblioteca AOS para animaciones al hacer scroll
+// Nota: En una implementación real, esto se haría con npm install aos
+---
+
+<Layout
+  title="Mariachi Alma de México | Música Tradicional Mexicana"
+  description="Grupo de mariachi profesional con más de 15 años de experiencia. Ofrecemos servicios para bodas, fiestas, serenatas y eventos especiales con el auténtico sonido de México."
+>
+  <!-- Navbar -->
+  <Navbar />
+
+  <!-- Hero Section -->
+  <Hero />
+
+  <!-- Nosotros Section -->
+  <Nosotros />
+
+  <!-- Servicios Section -->
+  <Servicios />
+
+  <!-- Repertorio Section -->
+  <Repertorio />
+
+  <!-- Galeria Section -->
+  <Galeria />
+
+  <!-- Testimonios Section -->
+  <Testimonios />
+
+  <!-- Contacto Section -->
+  <Contacto />
+
+  <!-- Footer -->
+  <Footer />
+
+  <!-- AOS Initialization -->
+  <script is:inline>
+    // Inicializar AOS cuando el DOM esté cargado
+    document.addEventListener("DOMContentLoaded", function () {
+      // Simulación de inicialización de AOS (en una implementación real se usaría la biblioteca AOS)
+      const elementsToAnimate = document.querySelectorAll("[data-aos]");
+
+      // Función para verificar si un elemento está en el viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.bottom >= 0
+        );
+      }
+
+      // Función para animar elementos cuando están en el viewport
+      function animateOnScroll() {
+        elementsToAnimate.forEach((element) => {
+          if (
+            isInViewport(element) &&
+            !element.classList.contains("aos-animate")
+          ) {
+            element.classList.add("aos-animate");
+          }
+        });
+      }
+
+      // Agregar clase inicial a todos los elementos con data-aos
+      elementsToAnimate.forEach((element) => {
+        element.style.opacity = "0";
+        element.style.transition =
+          "opacity 0.6s ease-in-out, transform 0.6s ease-in-out";
+
+        const animation = element.getAttribute("data-aos");
+        if (animation === "fade-up") {
+          element.style.transform = "translateY(50px)";
+        } else if (animation === "fade-down") {
+          element.style.transform = "translateY(-50px)";
+        } else if (animation === "fade-left") {
+          element.style.transform = "translateX(50px)";
+        } else if (animation === "fade-right") {
+          element.style.transform = "translateX(-50px)";
+        } else if (animation === "zoom-in") {
+          element.style.transform = "scale(0.9)";
+        } else if (animation === "flip-left") {
+          element.style.transform = "rotateY(90deg)";
+        }
+
+        // Aplicar delay si existe
+        const delay = element.getAttribute("data-aos-delay");
+        if (delay) {
+          element.style.transitionDelay = `${delay}ms`;
+        }
+      });
+
+      // Clase para elementos animados
+      document.documentElement.style.setProperty(
+        "--aos-animate",
+        `
+				opacity: 1 !important;
+				transform: translateX(0) translateY(0) scale(1) rotate(0) rotateY(0) !important;
+			`
+      );
+
+      // Agregar estilos CSS para la clase aos-animate
+      const style = document.createElement("style");
+      style.innerHTML =
+        ".aos-animate { opacity: 1 !important; transform: translateX(0) translateY(0) scale(1) rotate(0) rotateY(0) !important; }";
+      document.head.appendChild(style);
+
+      // Ejecutar animación al cargar la página
+      animateOnScroll();
+
+      // Agregar evento de scroll para animar elementos
+      window.addEventListener("scroll", animateOnScroll);
+    });
+  </script>
+</Layout>

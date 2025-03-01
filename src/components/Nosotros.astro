@@ -1,0 +1,155 @@
+---
+// Nosotros.astro
+---
+
+<section id="nosotros" class="section bg-white relative overflow-hidden">
+  <!-- Decorative Elements -->
+  <div
+    class="absolute top-0 right-0 w-64 h-64 bg-mariachi-accent opacity-10 rounded-full -translate-y-1/2 translate-x-1/3"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 left-0 w-80 h-80 bg-mariachi-primary opacity-10 rounded-full translate-y-1/3 -translate-x-1/4"
+  >
+  </div>
+
+  <div class="container relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Nuestra <span class="text-mariachi-primary">Historia</span>
+      </h2>
+      <p class="text-mariachi-dark/70 max-w-3xl mx-auto">
+        Conoce la pasión y tradición que nos ha convertido en uno de los grupos
+        de mariachi más solicitados.
+      </p>
+      <div class="w-24 h-1 bg-mariachi-accent mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="order-2 lg:order-1" data-aos="fade-right">
+        <h3 class="text-2xl font-bold mb-6 text-mariachi-secondary">
+          Tradición y Excelencia Musical
+        </h3>
+        <p class="mb-6 text-lg">
+          Fundado en 2008, <span class="font-semibold text-mariachi-primary"
+            >Mariachi Alma de México</span
+          > nació de la pasión por preservar y compartir la rica tradición musical
+          mexicana. Nuestro grupo está formado por músicos profesionales con amplia
+          experiencia y formación académica.
+        </p>
+        <p class="mb-6 text-lg">
+          A lo largo de más de 15 años, hemos tenido el honor de acompañar
+          momentos especiales en la vida de nuestros clientes, desde bodas y
+          cumpleaños hasta eventos corporativos y festivales culturales.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="bg-mariachi-light p-6 rounded-lg shadow-md text-center">
+            <div class="text-mariachi-primary text-4xl font-bold mb-2">15+</div>
+            <p class="text-mariachi-dark">Años de experiencia</p>
+          </div>
+          <div class="bg-mariachi-light p-6 rounded-lg shadow-md text-center">
+            <div class="text-mariachi-primary text-4xl font-bold mb-2">
+              1000+
+            </div>
+            <p class="text-mariachi-dark">Eventos realizados</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-1 lg:order-2 relative" data-aos="fade-left">
+        <div
+          class="relative z-10 rounded-lg overflow-hidden shadow-xl border-4 border-white transform hover:rotate-3 transition-transform duration-500"
+        >
+          <img
+            src="/images/mariachi-nosotros.jpg"
+            alt="Mariachi Alma de México - Nuestra Historia"
+            class="w-full h-auto"
+            onerror="this.src='https://images.unsplash.com/photo-1552413544-30ffc7450ff7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'; this.onerror=null;"
+          />
+        </div>
+
+        <!-- Decorative Elements -->
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full border-4 border-mariachi-accent rounded-lg -rotate-6 z-0"
+        >
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuestros Valores -->
+    <div class="mt-24">
+      <h3 class="text-2xl font-bold mb-12 text-center">
+        Nuestros <span class="text-mariachi-primary">Valores</span>
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="w-16 h-16 bg-mariachi-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-heart text-mariachi-primary text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-mariachi-dark">Pasión</h4>
+          <p class="text-mariachi-dark/70">
+            Amamos lo que hacemos y lo transmitimos en cada nota musical.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="w-16 h-16 bg-mariachi-accent/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-star text-mariachi-accent text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-mariachi-dark">Excelencia</h4>
+          <p class="text-mariachi-dark/70">
+            Buscamos la perfección en cada presentación y ensayo.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div
+            class="w-16 h-16 bg-mariachi-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-handshake text-mariachi-secondary text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-mariachi-dark">Compromiso</h4>
+          <p class="text-mariachi-dark/70">
+            Cumplimos con profesionalismo cada acuerdo con nuestros clientes.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div
+            class="w-16 h-16 bg-mariachi-green/10 rounded-full flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-music text-mariachi-green text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-mariachi-dark">Tradición</h4>
+          <p class="text-mariachi-dark/70">
+            Preservamos la autenticidad de la música mexicana en cada
+            interpretación.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

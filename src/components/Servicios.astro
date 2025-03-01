@@ -1,0 +1,418 @@
+---
+// Servicios.astro
+---
+
+<section
+  id="servicios"
+  class="section bg-mariachi-light/50 relative overflow-hidden"
+>
+  <!-- Decorative Background -->
+  <div class="absolute inset-0 bg-mariachi-pattern opacity-5 z-0"></div>
+
+  <div class="container relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Nuestros <span class="text-mariachi-primary">Servicios</span>
+      </h2>
+      <p class="text-mariachi-dark/70 max-w-3xl mx-auto">
+        Ofrecemos una amplia variedad de servicios musicales para todo tipo de
+        eventos y celebraciones.
+      </p>
+      <div class="w-24 h-1 bg-mariachi-accent mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Servicio 1: Bodas -->
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="h-48 overflow-hidden relative">
+          <img
+            src="/images/mariachi-boda.jpg"
+            alt="Mariachi para bodas"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+          >
+          </div>
+          <h3
+            class="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center"
+          >
+            Bodas
+          </h3>
+        </div>
+        <div class="p-6 text-center">
+          <p class="mb-4 text-mariachi-dark/80 text-justify">
+            Hacemos de tu día especial un momento inolvidable con nuestra
+            música. Ofrecemos paquetes para ceremonia, recepción o ambos.
+          </p>
+          <ul class="mb-6 space-y-2 text-left mx-auto max-w-[80%]">
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Ceremonia religiosa</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Recepción y brindis</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Primer baile</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Cotizar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 2: Serenatas -->
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="h-48 overflow-hidden relative">
+          <img
+            src="/images/mariachi-serenata.jpg"
+            alt="Mariachi para serenatas"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+          >
+          </div>
+          <h3
+            class="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center"
+          >
+            Serenatas
+          </h3>
+        </div>
+        <div class="p-6 text-center">
+          <p class="mb-4 text-mariachi-dark/80 text-justify">
+            Sorprende a esa persona especial con una romántica serenata.
+            Perfectas para aniversarios, cumpleaños o declaraciones.
+          </p>
+          <ul class="mb-6 space-y-2 text-left mx-auto max-w-[80%]">
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Canciones personalizadas</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Horarios flexibles</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Servicio discreto</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Cotizar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 3: Eventos Corporativos -->
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="h-48 overflow-hidden relative">
+          <img
+            src="/images/mariachi-corporativo.jpg"
+            alt="Mariachi para eventos corporativos"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+          >
+          </div>
+          <h3
+            class="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center"
+          >
+            Eventos Corporativos
+          </h3>
+        </div>
+        <div class="p-6 text-center">
+          <p class="mb-4 text-mariachi-dark/80 text-justify">
+            Dale un toque cultural y festivo a tus eventos empresariales. Ideal
+            para convenciones, cenas de gala o fiestas de fin de año.
+          </p>
+          <ul class="mb-6 space-y-2 text-left mx-auto max-w-[80%]">
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Facturación disponible</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Repertorio adaptable</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Presentación formal</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Cotizar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 4: Fiestas Privadas -->
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <div class="h-48 overflow-hidden relative">
+          <img
+            src="/images/mariachi-fiesta.jpg"
+            alt="Mariachi para fiestas privadas"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+          >
+          </div>
+          <h3
+            class="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center"
+          >
+            Fiestas Privadas
+          </h3>
+        </div>
+        <div class="p-6 text-center">
+          <p class="mb-4 text-mariachi-dark/80 text-justify">
+            Amenizamos tus celebraciones familiares con la mejor música
+            mexicana. Perfecto para cumpleaños, aniversarios o reuniones.
+          </p>
+          <ul class="mb-6 space-y-2 text-left mx-auto max-w-[80%]">
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Interacción con invitados</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Peticiones musicales</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Ambiente festivo</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Cotizar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 5: Festivales -->
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <div class="h-48 overflow-hidden relative">
+          <img
+            src="/images/mariachi-festival.jpg"
+            alt="Mariachi para festivales"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1566981731417-d0e1ea9f3255?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+          >
+          </div>
+          <h3
+            class="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center"
+          >
+            Festivales
+          </h3>
+        </div>
+        <div class="p-6 text-center">
+          <p class="mb-4 text-mariachi-dark/80 text-justify">
+            Participamos en eventos culturales, festivales y celebraciones
+            comunitarias con un espectáculo de primer nivel.
+          </p>
+          <ul class="mb-6 space-y-2 text-left mx-auto max-w-[80%]">
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Equipo de sonido propio</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Espectáculo completo</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Adaptable a escenarios</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Cotizar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 6: Clases y Talleres -->
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+        data-aos="fade-up"
+        data-aos-delay="600"
+      >
+        <div class="h-48 overflow-hidden relative">
+          <img
+            src="/images/mariachi-clases.jpg"
+            alt="Clases de música mariachi"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1514119412350-e174d90d280e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+          >
+          </div>
+          <h3
+            class="absolute bottom-4 left-0 right-0 text-white text-xl font-bold text-center"
+          >
+            Clases y Talleres
+          </h3>
+        </div>
+        <div class="p-6 text-center">
+          <p class="mb-4 text-mariachi-dark/80 text-justify">
+            Compartimos nuestro conocimiento a través de clases de instrumentos
+            y talleres sobre la cultura del mariachi.
+          </p>
+          <ul class="mb-6 space-y-2 text-left mx-auto max-w-[80%]">
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Todos los niveles</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Instructores profesionales</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-mariachi-primary mr-2"></i>
+              <span>Clases individuales o grupales</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Cotizar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paquetes Especiales -->
+    <div
+      class="mt-20 bg-white p-8 rounded-lg shadow-xl border border-mariachi-accent/20"
+      data-aos="fade-up"
+    >
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-mariachi-secondary">
+          Paquetes Especiales
+        </h3>
+        <p class="text-mariachi-dark/70 mt-2">
+          Diseñados para adaptarse a diferentes necesidades y presupuestos
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="border border-mariachi-light rounded-lg p-6 text-center hover:border-mariachi-accent transition-colors duration-300"
+        >
+          <h4 class="text-xl font-bold mb-2">Paquete Básico</h4>
+          <div class="text-3xl font-bold text-mariachi-primary mb-4">
+            $3,500
+          </div>
+          <ul class="text-left space-y-2 mb-6 mx-auto max-w-[80%]">
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>1 hora de presentación</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>5 músicos</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>15 canciones a elegir</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-secondary w-full text-center"
+            >Reservar</a
+          >
+        </div>
+
+        <div
+          class="border-2 border-mariachi-accent rounded-lg p-6 text-center relative shadow-lg transform scale-105"
+        >
+          <div
+            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-mariachi-accent text-mariachi-dark text-sm font-bold py-1 px-4 rounded-full"
+          >
+            Más Popular
+          </div>
+          <h4 class="text-xl font-bold mb-2">Paquete Premium</h4>
+          <div class="text-3xl font-bold text-mariachi-primary mb-4">
+            $5,500
+          </div>
+          <ul class="text-left space-y-2 mb-6 mx-auto max-w-[80%]">
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>2 horas de presentación</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>8 músicos</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>Repertorio ilimitado</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>Dedicatorias personalizadas</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-primary w-full text-center">Reservar</a
+          >
+        </div>
+
+        <div
+          class="border border-mariachi-light rounded-lg p-6 text-center hover:border-mariachi-accent transition-colors duration-300"
+        >
+          <h4 class="text-xl font-bold mb-2">Paquete Deluxe</h4>
+          <div class="text-3xl font-bold text-mariachi-primary mb-4">
+            $8,500
+          </div>
+          <ul class="text-left space-y-2 mb-6 mx-auto max-w-[80%]">
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>3 horas de presentación</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>12 músicos completos</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>Repertorio ilimitado</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>Transporte incluido</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-mariachi-primary mt-1 mr-2"></i>
+              <span>Video de recuerdo</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="btn-secondary w-full text-center"
+            >Reservar</a
+          >
+        </div>
+      </div>
+
+      <p class="text-center mt-8 text-sm text-mariachi-dark/60">
+        * Los precios pueden variar según la ubicación y fecha del evento.
+        Contáctanos para un presupuesto personalizado.
+      </p>
+    </div>
+  </div>
+</section>

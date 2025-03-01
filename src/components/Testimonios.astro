@@ -1,0 +1,507 @@
+---
+// Testimonios.astro
+---
+
+<section
+  id="testimonios"
+  class="section bg-mariachi-light/50 relative overflow-hidden"
+>
+  <!-- Decorative Background -->
+  <div class="absolute inset-0 bg-mariachi-pattern opacity-5 z-0"></div>
+
+  <div class="container relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Nuestros <span class="text-mariachi-primary">Clientes</span> Opinan
+      </h2>
+      <p class="text-mariachi-dark/70 max-w-3xl mx-auto">
+        Descubre lo que dicen quienes han disfrutado de nuestra música en sus
+        eventos especiales.
+      </p>
+      <div class="w-24 h-1 bg-mariachi-accent mx-auto mt-6"></div>
+    </div>
+
+    <!-- Testimonios Destacados -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonio 1 -->
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg relative"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div
+          class="absolute -top-5 -left-5 w-10 h-10 bg-mariachi-primary rounded-full flex items-center justify-center"
+        >
+          <i class="fas fa-quote-left text-white"></i>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+              <img
+                src="/images/testimonios/cliente-1.jpg"
+                alt="Cliente satisfecho"
+                class="w-full h-full object-cover"
+                onerror="this.src='https://randomuser.me/api/portraits/women/65.jpg'; this.onerror=null;"
+              />
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-mariachi-dark">
+                Laura Martínez
+              </h4>
+              <p class="text-mariachi-dark/60 text-sm">
+                Boda en Hacienda Los Olivos
+              </p>
+            </div>
+          </div>
+
+          <div class="flex mb-4">
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+          </div>
+
+          <p class="text-mariachi-dark/80">
+            "¡Increíble experiencia! Mariachi Alma de México hizo de nuestra
+            boda un momento mágico. Todos nuestros invitados quedaron encantados
+            con su profesionalismo y la calidad de su música. ¡Los recomendamos
+            ampliamente!"
+          </p>
+        </div>
+
+        <div class="text-right">
+          <span class="text-sm text-mariachi-dark/50">Mayo 2023</span>
+        </div>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg relative"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div
+          class="absolute -top-5 -left-5 w-10 h-10 bg-mariachi-primary rounded-full flex items-center justify-center"
+        >
+          <i class="fas fa-quote-left text-white"></i>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+              <img
+                src="/images/testimonios/cliente-2.jpg"
+                alt="Cliente satisfecho"
+                class="w-full h-full object-cover"
+                onerror="this.src='https://randomuser.me/api/portraits/men/32.jpg'; this.onerror=null;"
+              />
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-mariachi-dark">
+                Carlos Rodríguez
+              </h4>
+              <p class="text-mariachi-dark/60 text-sm">Aniversario de Bodas</p>
+            </div>
+          </div>
+
+          <div class="flex mb-4">
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+          </div>
+
+          <p class="text-mariachi-dark/80">
+            "Contraté a Mariachi Alma de México para sorprender a mi esposa en
+            nuestro aniversario. La serenata fue perfecta, muy puntual y con un
+            repertorio excelente. Mi esposa quedó encantada y yo muy satisfecho
+            con el servicio."
+          </p>
+        </div>
+
+        <div class="text-right">
+          <span class="text-sm text-mariachi-dark/50">Julio 2023</span>
+        </div>
+      </div>
+
+      <!-- Testimonio 3 -->
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg relative"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div
+          class="absolute -top-5 -left-5 w-10 h-10 bg-mariachi-primary rounded-full flex items-center justify-center"
+        >
+          <i class="fas fa-quote-left text-white"></i>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+              <img
+                src="/images/testimonios/cliente-3.jpg"
+                alt="Cliente satisfecho"
+                class="w-full h-full object-cover"
+                onerror="this.src='https://randomuser.me/api/portraits/women/42.jpg'; this.onerror=null;"
+              />
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-mariachi-dark">
+                Sofía Hernández
+              </h4>
+              <p class="text-mariachi-dark/60 text-sm">Evento Corporativo</p>
+            </div>
+          </div>
+
+          <div class="flex mb-4">
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star text-mariachi-accent"></i>
+            <i class="fas fa-star-half-alt text-mariachi-accent"></i>
+          </div>
+
+          <p class="text-mariachi-dark/80">
+            "Contratamos a Mariachi Alma de México para nuestra cena anual de
+            empresa y fue todo un éxito. Muy profesionales, puntuales y con una
+            presentación impecable. Todos los asistentes quedaron encantados."
+          </p>
+        </div>
+
+        <div class="text-right">
+          <span class="text-sm text-mariachi-dark/50">Diciembre 2023</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Más Testimonios (Carrusel) -->
+    <div class="mt-16 bg-white p-8 rounded-lg shadow-xl" data-aos="fade-up">
+      <h3 class="text-2xl font-bold mb-8 text-center">
+        Más <span class="text-mariachi-primary">Experiencias</span>
+      </h3>
+
+      <div class="testimonial-carousel relative">
+        <div class="overflow-hidden" id="testimonial-container">
+          <div
+            class="flex transition-transform duration-500"
+            id="testimonial-slider"
+          >
+            <!-- Testimonio Carrusel 1 -->
+            <div
+              class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+            >
+              <div class="border border-mariachi-light p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-full overflow-hidden mr-3">
+                    <img
+                      src="/images/testimonios/cliente-4.jpg"
+                      alt="Cliente satisfecho"
+                      class="w-full h-full object-cover"
+                      onerror="this.src='https://randomuser.me/api/portraits/men/22.jpg'; this.onerror=null;"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-mariachi-dark">
+                      Miguel Ángel López
+                    </h4>
+                    <div class="flex">
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-mariachi-dark/80 text-sm">
+                  "Excelente servicio para el cumpleaños de mi madre. Muy
+                  puntuales y profesionales. Definitivamente los volveré a
+                  contratar."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonio Carrusel 2 -->
+            <div
+              class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+            >
+              <div class="border border-mariachi-light p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-full overflow-hidden mr-3">
+                    <img
+                      src="/images/testimonios/cliente-5.jpg"
+                      alt="Cliente satisfecho"
+                      class="w-full h-full object-cover"
+                      onerror="this.src='https://randomuser.me/api/portraits/women/28.jpg'; this.onerror=null;"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-mariachi-dark">
+                      Ana García
+                    </h4>
+                    <div class="flex">
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i
+                        class="fas fa-star-half-alt text-mariachi-accent text-xs"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-mariachi-dark/80 text-sm">
+                  "La mejor decisión para nuestra fiesta familiar. Gran
+                  repertorio y excelente actitud. Todos quedaron encantados."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonio Carrusel 3 -->
+            <div
+              class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+            >
+              <div class="border border-mariachi-light p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-full overflow-hidden mr-3">
+                    <img
+                      src="/images/testimonios/cliente-6.jpg"
+                      alt="Cliente satisfecho"
+                      class="w-full h-full object-cover"
+                      onerror="this.src='https://randomuser.me/api/portraits/men/62.jpg'; this.onerror=null;"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-mariachi-dark">
+                      Roberto Méndez
+                    </h4>
+                    <div class="flex">
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-mariachi-dark/80 text-sm">
+                  "Contratamos sus servicios para una serenata sorpresa y fue
+                  espectacular. Muy recomendables, volveremos a contratarlos."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonio Carrusel 4 -->
+            <div
+              class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+            >
+              <div class="border border-mariachi-light p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 rounded-full overflow-hidden mr-3">
+                    <img
+                      src="/images/testimonios/cliente-7.jpg"
+                      alt="Cliente satisfecho"
+                      class="w-full h-full object-cover"
+                      onerror="this.src='https://randomuser.me/api/portraits/women/54.jpg'; this.onerror=null;"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-mariachi-dark">
+                      Patricia Vega
+                    </h4>
+                    <div class="flex">
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                      <i class="fas fa-star text-mariachi-accent text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-mariachi-dark/80 text-sm">
+                  "Excelente presentación en nuestra boda. Todos los invitados
+                  quedaron encantados con su música. Altamente recomendables."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles del Carrusel -->
+        <button
+          id="prev-testimonial"
+          class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow-md flex items-center justify-center text-mariachi-dark hover:text-mariachi-primary transition-colors duration-300"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <button
+          id="next-testimonial"
+          class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow-md flex items-center justify-center text-mariachi-dark hover:text-mariachi-primary transition-colors duration-300"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Indicadores -->
+      <div
+        class="flex justify-center mt-6 space-x-2"
+        id="testimonial-indicators"
+      >
+        <button
+          class="w-3 h-3 rounded-full bg-mariachi-primary indicator-active"
+        ></button>
+        <button class="w-3 h-3 rounded-full bg-mariachi-light"></button>
+        <button class="w-3 h-3 rounded-full bg-mariachi-light"></button>
+        <button class="w-3 h-3 rounded-full bg-mariachi-light"></button>
+      </div>
+    </div>
+
+    <!-- Reseñas Externas -->
+    <div class="mt-16 text-center">
+      <h3 class="text-xl font-bold mb-6">También nos encuentras en:</h3>
+
+      <div class="flex flex-wrap justify-center gap-6">
+        <a
+          href="#"
+          class="flex items-center bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Maps_icon.svg/1200px-Google_Maps_icon.svg.png"
+            alt="Google Maps"
+            class="w-8 h-8 mr-2"
+          />
+          <div class="text-left">
+            <div class="font-bold text-mariachi-dark">Google Maps</div>
+            <div class="flex">
+              <i class="fas fa-star text-yellow-500 text-xs"></i>
+              <i class="fas fa-star text-yellow-500 text-xs"></i>
+              <i class="fas fa-star text-yellow-500 text-xs"></i>
+              <i class="fas fa-star text-yellow-500 text-xs"></i>
+              <i class="fas fa-star-half-alt text-yellow-500 text-xs"></i>
+              <span class="text-xs ml-1">4.8/5</span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Yelp_Logo.svg/1200px-Yelp_Logo.svg.png"
+            alt="Yelp"
+            class="w-8 h-8 mr-2"
+          />
+          <div class="text-left">
+            <div class="font-bold text-mariachi-dark">Yelp</div>
+            <div class="flex">
+              <i class="fas fa-star text-red-500 text-xs"></i>
+              <i class="fas fa-star text-red-500 text-xs"></i>
+              <i class="fas fa-star text-red-500 text-xs"></i>
+              <i class="fas fa-star text-red-500 text-xs"></i>
+              <i class="fas fa-star text-red-500 text-xs"></i>
+              <span class="text-xs ml-1">5/5</span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Facebook_logo_2021.svg/1200px-Facebook_logo_2021.svg.png"
+            alt="Facebook"
+            class="w-8 h-8 mr-2"
+          />
+          <div class="text-left">
+            <div class="font-bold text-mariachi-dark">Facebook</div>
+            <div class="flex">
+              <i class="fas fa-star text-blue-500 text-xs"></i>
+              <i class="fas fa-star text-blue-500 text-xs"></i>
+              <i class="fas fa-star text-blue-500 text-xs"></i>
+              <i class="fas fa-star text-blue-500 text-xs"></i>
+              <i class="fas fa-star-half-alt text-blue-500 text-xs"></i>
+              <span class="text-xs ml-1">4.7/5</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Carrusel de testimonios
+  const slider = document.getElementById("testimonial-slider");
+  const prevButton = document.getElementById("prev-testimonial");
+  const nextButton = document.getElementById("next-testimonial");
+  const indicators = document.querySelectorAll(
+    "#testimonial-indicators button"
+  );
+
+  let currentSlide = 0;
+  const totalSlides = document.querySelectorAll(".testimonial-slide").length;
+  let slidesToShow =
+    window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+  let maxSlide = Math.ceil(totalSlides / slidesToShow) - 1;
+
+  function updateSlider() {
+    if (slider instanceof HTMLElement) {
+      const slideWidth = 100 / slidesToShow;
+      slider.style.transform = `translateX(-${currentSlide * slideWidth * slidesToShow}%)`;
+
+      // Actualizar indicadores
+      indicators.forEach((indicator, index) => {
+        if (index === currentSlide) {
+          indicator.classList.add("bg-mariachi-primary");
+          indicator.classList.remove("bg-mariachi-light");
+          indicator.classList.add("indicator-active");
+        } else {
+          indicator.classList.remove("bg-mariachi-primary");
+          indicator.classList.add("bg-mariachi-light");
+          indicator.classList.remove("indicator-active");
+        }
+      });
+    }
+  }
+
+  // Botones de navegación
+  prevButton?.addEventListener("click", () => {
+    currentSlide = Math.max(0, currentSlide - 1);
+    updateSlider();
+  });
+
+  nextButton?.addEventListener("click", () => {
+    currentSlide = Math.min(maxSlide, currentSlide + 1);
+    updateSlider();
+  });
+
+  // Indicadores
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      currentSlide = index;
+      updateSlider();
+    });
+  });
+
+  // Responsive
+  window.addEventListener("resize", () => {
+    const newSlidesToShow =
+      window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+    if (newSlidesToShow !== slidesToShow) {
+      slidesToShow = newSlidesToShow;
+      maxSlide = Math.ceil(totalSlides / slidesToShow) - 1;
+      currentSlide = 0;
+      updateSlider();
+    }
+  });
+
+  // Inicializar
+  updateSlider();
+</script>

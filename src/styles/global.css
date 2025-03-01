@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-body text-mariachi-dark bg-mariachi-light;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 rounded-md font-bold transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply btn bg-mariachi-primary text-white hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-mariachi-secondary text-white hover:bg-opacity-90;
+  }
+  
+  .btn-accent {
+    @apply btn bg-mariachi-accent text-mariachi-dark hover:bg-opacity-90;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+} 

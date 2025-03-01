@@ -1,0 +1,465 @@
+---
+// Galeria.astro
+---
+
+<section id="galeria" class="section bg-white relative overflow-hidden">
+  <!-- Decorative Elements -->
+  <div
+    class="absolute top-0 right-0 w-64 h-64 bg-mariachi-primary opacity-10 rounded-full -translate-y-1/2 translate-x-1/3"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 left-0 w-80 h-80 bg-mariachi-accent opacity-10 rounded-full translate-y-1/3 -translate-x-1/4"
+  >
+  </div>
+
+  <div class="container relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Nuestra <span class="text-mariachi-primary">Galería</span>
+      </h2>
+      <p class="text-mariachi-dark/70 max-w-3xl mx-auto">
+        Momentos inolvidables capturados en nuestras presentaciones y eventos.
+      </p>
+      <div class="w-24 h-1 bg-mariachi-accent mx-auto mt-6"></div>
+    </div>
+
+    <!-- Filtros de Galería -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="bodas">Bodas</button>
+      <button class="filter-btn" data-filter="eventos">Eventos</button>
+      <button class="filter-btn" data-filter="serenatas">Serenatas</button>
+      <button class="filter-btn" data-filter="festivales">Festivales</button>
+    </div>
+
+    <!-- Galería de Imágenes -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      id="gallery-container"
+    >
+      <!-- Imagen 1 -->
+      <div class="gallery-item bodas" data-aos="zoom-in" data-aos-delay="100">
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/boda-1.jpg"
+            alt="Mariachi en boda"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Boda Romántica</h3>
+              <p class="text-white/80 text-sm">Hacienda Los Olivos</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="gallery-item eventos" data-aos="zoom-in" data-aos-delay="200">
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/evento-1.jpg"
+            alt="Mariachi en evento corporativo"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Evento Corporativo</h3>
+              <p class="text-white/80 text-sm">Hotel Presidente</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div
+        class="gallery-item serenatas"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/serenata-1.jpg"
+            alt="Mariachi en serenata"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Serenata Romántica</h3>
+              <p class="text-white/80 text-sm">Aniversario de Bodas</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 4 -->
+      <div
+        class="gallery-item festivales"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/festival-1.jpg"
+            alt="Mariachi en festival"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1566981731417-d0e1ea9f3255?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Festival Cultural</h3>
+              <p class="text-white/80 text-sm">Plaza Principal</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="gallery-item bodas" data-aos="zoom-in" data-aos-delay="100">
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/boda-2.jpg"
+            alt="Mariachi en boda"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Ceremonia Religiosa</h3>
+              <p class="text-white/80 text-sm">Catedral Metropolitana</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="gallery-item eventos" data-aos="zoom-in" data-aos-delay="200">
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/evento-2.jpg"
+            alt="Mariachi en evento privado"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Fiesta Privada</h3>
+              <p class="text-white/80 text-sm">Cumpleaños 50</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 7 -->
+      <div
+        class="gallery-item serenatas"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/serenata-2.jpg"
+            alt="Mariachi en serenata"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1551184451-76b792ac4a7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Serenata Sorpresa</h3>
+              <p class="text-white/80 text-sm">Propuesta de Matrimonio</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 8 -->
+      <div
+        class="gallery-item festivales"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+          <img
+            src="/images/gallery/festival-2.jpg"
+            alt="Mariachi en festival"
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'; this.onerror=null;"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end"
+          >
+            <div class="p-4">
+              <h3 class="text-white font-bold">Celebración Patria</h3>
+              <p class="text-white/80 text-sm">15 de Septiembre</p>
+            </div>
+          </div>
+          <div class="absolute top-4 right-4">
+            <button
+              class="gallery-zoom bg-white/80 hover:bg-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            >
+              <i class="fas fa-search-plus text-mariachi-dark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ver Más -->
+    <div class="text-center mt-12">
+      <a href="#" class="btn-secondary inline-flex items-center" id="load-more">
+        <i class="fas fa-images mr-2"></i> Cargar Más Fotos
+      </a>
+    </div>
+
+    <!-- Modal de Imagen -->
+    <div
+      id="gallery-modal"
+      class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4"
+    >
+      <button
+        id="close-modal"
+        class="absolute top-6 right-6 text-white hover:text-mariachi-primary text-3xl"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+
+      <button
+        id="prev-image"
+        class="absolute left-4 text-white hover:text-mariachi-primary text-4xl"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="max-w-4xl max-h-[80vh] overflow-hidden">
+        <img
+          id="modal-image"
+          src=""
+          alt="Imagen ampliada"
+          class="max-w-full max-h-[80vh] object-contain"
+        />
+      </div>
+
+      <button
+        id="next-image"
+        class="absolute right-4 text-white hover:text-mariachi-primary text-4xl"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="absolute bottom-6 left-0 right-0 text-center text-white">
+        <h3 id="modal-title" class="text-xl font-bold"></h3>
+        <p id="modal-subtitle" class="text-sm text-white/80"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .filter-btn {
+    @apply px-4 py-2 rounded-full border border-mariachi-dark/20 text-mariachi-dark hover:bg-mariachi-primary hover:text-white hover:border-mariachi-primary transition-colors duration-300;
+  }
+
+  .filter-btn.active {
+    @apply bg-mariachi-primary text-white border-mariachi-primary;
+  }
+</style>
+
+<script>
+  // Filtrado de galería
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Actualizar botones activos
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      // Filtrar elementos
+      galleryItems.forEach((item) => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          if (item instanceof HTMLElement) {
+            item.style.display = "block";
+          }
+        } else {
+          if (item instanceof HTMLElement) {
+            item.style.display = "none";
+          }
+        }
+      });
+    });
+  });
+
+  // Modal de galería
+  const modal = document.getElementById("gallery-modal");
+  const modalImage = document.getElementById(
+    "modal-image"
+  ) as HTMLImageElement | null;
+  const modalTitle = document.getElementById("modal-title");
+  const modalSubtitle = document.getElementById("modal-subtitle");
+  const closeModal = document.getElementById("close-modal");
+  const prevButton = document.getElementById("prev-image");
+  const nextButton = document.getElementById("next-image");
+  const zoomButtons = document.querySelectorAll(".gallery-zoom");
+
+  let currentIndex = 0;
+  interface GalleryImage {
+    src: string;
+    title: string;
+    subtitle: string;
+  }
+  const galleryImages: GalleryImage[] = [];
+
+  // Recopilar información de imágenes
+  galleryItems.forEach((item, index) => {
+    const img = item.querySelector("img");
+    const title = item.querySelector("h3")?.textContent || "";
+    const subtitle = item.querySelector("p")?.textContent || "";
+
+    if (img instanceof HTMLImageElement) {
+      galleryImages.push({
+        src: img.src,
+        title,
+        subtitle,
+      });
+
+      // Abrir modal al hacer clic en el botón de zoom
+      const zoomBtn = item.querySelector(".gallery-zoom");
+      if (zoomBtn) {
+        zoomBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          openModal(index);
+        });
+      }
+
+      // También abrir modal al hacer clic en la imagen
+      img.addEventListener("click", () => {
+        openModal(index);
+      });
+    }
+  });
+
+  function openModal(index: number) {
+    currentIndex = index;
+    updateModalContent();
+    modal?.classList.remove("hidden");
+    if (document.body) {
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function updateModalContent() {
+    const image = galleryImages[currentIndex];
+    if (modalImage) modalImage.src = image.src;
+    if (modalTitle) modalTitle.textContent = image.title;
+    if (modalSubtitle) modalSubtitle.textContent = image.subtitle;
+  }
+
+  // Cerrar modal
+  closeModal?.addEventListener("click", () => {
+    modal?.classList.add("hidden");
+    if (document.body) {
+      document.body.style.overflow = "auto";
+    }
+  });
+
+  // Navegación de imágenes
+  prevButton?.addEventListener("click", () => {
+    currentIndex =
+      (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateModalContent();
+  });
+
+  nextButton?.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateModalContent();
+  });
+
+  // Cerrar modal con tecla Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal && !modal.classList.contains("hidden")) {
+      modal.classList.add("hidden");
+      if (document.body) {
+        document.body.style.overflow = "auto";
+      }
+    }
+  });
+
+  // Botón de cargar más (simulado)
+  const loadMoreBtn = document.getElementById("load-more");
+  loadMoreBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert(
+      "Esta funcionalidad cargaría más imágenes desde el servidor en una implementación real."
+    );
+  });
+</script>

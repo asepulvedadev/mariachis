@@ -1,0 +1,365 @@
+---
+// Contacto.astro
+---
+
+<section
+  id="contacto"
+  class="section bg-mariachi-secondary relative overflow-hidden"
+>
+  <!-- Decorative Elements -->
+  <div
+    class="absolute inset-0 bg-[url('/src/assets/pattern.svg')] opacity-5 z-0"
+  >
+  </div>
+
+  <div class="container relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
+        Contáctanos
+      </h2>
+      <p class="text-white/70 max-w-3xl mx-auto">
+        Estamos listos para hacer de tu evento algo inolvidable. ¡Contáctanos
+        hoy mismo!
+      </p>
+      <div class="w-24 h-1 bg-mariachi-accent mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Formulario de Contacto -->
+      <div class="bg-white rounded-lg shadow-xl p-8" data-aos="fade-right">
+        <h3 class="text-2xl font-bold mb-6 text-mariachi-dark">
+          Solicita una Cotización
+        </h3>
+
+        <form id="contact-form" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label
+                for="nombre"
+                class="block text-mariachi-dark font-medium mb-2"
+                >Nombre Completo *</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="telefono"
+                class="block text-mariachi-dark font-medium mb-2"
+                >Teléfono *</label
+              >
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="block text-mariachi-dark font-medium mb-2"
+              >Correo Electrónico *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              for="tipo-evento"
+              class="block text-mariachi-dark font-medium mb-2"
+              >Tipo de Evento *</label
+            >
+            <select
+              id="tipo-evento"
+              name="tipo-evento"
+              class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+              required
+            >
+              <option value="">Selecciona una opción</option>
+              <option value="boda">Boda</option>
+              <option value="cumpleanos">Cumpleaños</option>
+              <option value="aniversario">Aniversario</option>
+              <option value="serenata">Serenata</option>
+              <option value="corporativo">Evento Corporativo</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label
+                for="fecha"
+                class="block text-mariachi-dark font-medium mb-2"
+                >Fecha del Evento</label
+              >
+              <input
+                type="date"
+                id="fecha"
+                name="fecha"
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+              />
+            </div>
+
+            <div>
+              <label
+                for="hora"
+                class="block text-mariachi-dark font-medium mb-2"
+                >Hora Aproximada</label
+              >
+              <input
+                type="time"
+                id="hora"
+                name="hora"
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="mensaje"
+              class="block text-mariachi-dark font-medium mb-2"
+              >Mensaje o Detalles Adicionales</label
+            >
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mariachi-primary"
+            ></textarea>
+          </div>
+
+          <div class="flex items-start">
+            <input
+              type="checkbox"
+              id="privacidad"
+              name="privacidad"
+              class="mt-1 mr-2"
+              required
+            />
+            <label for="privacidad" class="text-sm text-mariachi-dark/80">
+              He leído y acepto la <a
+                href="#"
+                class="text-mariachi-primary hover:underline"
+                >política de privacidad</a
+              > y el tratamiento de mis datos personales.
+            </label>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="btn-primary w-full flex justify-center items-center"
+              id="submit-form"
+            >
+              <i class="fas fa-paper-plane mr-2"></i> Enviar Solicitud
+            </button>
+          </div>
+        </form>
+
+        <!-- Mensaje de Éxito (oculto por defecto) -->
+        <div
+          id="success-message"
+          class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-md"
+        >
+          <div class="flex items-center">
+            <i class="fas fa-check-circle text-xl mr-2"></i>
+            <p>
+              ¡Gracias por contactarnos! Nos pondremos en contacto contigo lo
+              antes posible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Información de Contacto -->
+      <div data-aos="fade-left">
+        <div class="bg-white rounded-lg shadow-xl p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-6 text-mariachi-dark">
+            Información de Contacto
+          </h3>
+
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-mariachi-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+              >
+                <i class="fas fa-phone text-mariachi-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-mariachi-dark mb-1">Teléfono</h4>
+                <p class="text-mariachi-dark/80">+52 (55) 1234 5678</p>
+                <p class="text-mariachi-dark/80">+52 (55) 8765 4321</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-mariachi-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+              >
+                <i class="fas fa-envelope text-mariachi-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-mariachi-dark mb-1">
+                  Correo Electrónico
+                </h4>
+                <p class="text-mariachi-dark/80">contacto@mariachialma.mx</p>
+                <p class="text-mariachi-dark/80">
+                  reservaciones@mariachialma.mx
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-mariachi-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+              >
+                <i class="fas fa-map-marker-alt text-mariachi-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-mariachi-dark mb-1">Ubicación</h4>
+                <p class="text-mariachi-dark/80">
+                  Av. Revolución 123, Col. Centro
+                </p>
+                <p class="text-mariachi-dark/80">Ciudad de México, CP 06000</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-mariachi-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+              >
+                <i class="fas fa-clock text-mariachi-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-mariachi-dark mb-1">
+                  Horario de Atención
+                </h4>
+                <p class="text-mariachi-dark/80">
+                  Lunes a Viernes: 9:00 AM - 8:00 PM
+                </p>
+                <p class="text-mariachi-dark/80">
+                  Sábados y Domingos: 10:00 AM - 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="bg-white rounded-lg shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-6 text-mariachi-dark">
+            Nuestra Ubicación
+          </h3>
+
+          <div class="rounded-lg overflow-hidden h-[300px] relative">
+            <!-- Placeholder para el mapa (en una implementación real se usaría Google Maps o similar) -->
+            <img
+              src="/images/mapa.jpg"
+              alt="Ubicación de Mariachi Alma de México"
+              class="w-full h-full object-cover"
+              onerror="this.src='https://maps.googleapis.com/maps/api/staticmap?center=Ciudad+de+Mexico&zoom=13&size=600x300&maptype=roadmap&markers=color:red%7CLabel:M%7CCiudad+de+Mexico&key=YOUR_API_KEY'; this.onerror=null;"
+            />
+
+            <!-- Overlay con botón para abrir en Google Maps -->
+            <div
+              class="absolute inset-0 bg-mariachi-dark/30 flex items-center justify-center"
+            >
+              <a
+                href="https://goo.gl/maps/your-location-link"
+                target="_blank"
+                class="bg-white px-4 py-2 rounded-full text-mariachi-dark font-bold hover:bg-mariachi-primary hover:text-white transition-colors duration-300"
+              >
+                <i class="fas fa-map-marked-alt mr-2"></i> Ver en Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="mt-8 flex justify-center space-x-6">
+          <a
+            href="#"
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-mariachi-primary hover:bg-mariachi-primary hover:text-white transition-colors duration-300 shadow-md"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-mariachi-primary hover:bg-mariachi-primary hover:text-white transition-colors duration-300 shadow-md"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-mariachi-primary hover:bg-mariachi-primary hover:text-white transition-colors duration-300 shadow-md"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="#"
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-mariachi-primary hover:bg-mariachi-primary hover:text-white transition-colors duration-300 shadow-md"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Manejo del formulario
+  const contactForm = document.getElementById(
+    "contact-form"
+  ) as HTMLFormElement | null;
+  const submitButton = document.getElementById("submit-form");
+  const successMessage = document.getElementById("success-message");
+
+  contactForm?.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Simulación de envío (en una implementación real se enviaría a un servidor)
+    if (submitButton instanceof HTMLButtonElement) {
+      // Cambiar el texto del botón y deshabilitarlo durante el "envío"
+      const originalText = submitButton.innerHTML;
+      submitButton.innerHTML =
+        '<i class="fas fa-spinner fa-spin mr-2"></i> Enviando...';
+      submitButton.disabled = true;
+
+      // Simular un tiempo de procesamiento
+      setTimeout(() => {
+        // Mostrar mensaje de éxito
+        successMessage?.classList.remove("hidden");
+
+        // Resetear el formulario
+        if (contactForm) {
+          contactForm.reset();
+        }
+
+        // Restaurar el botón
+        submitButton.innerHTML = originalText;
+        submitButton.disabled = false;
+
+        // Ocultar el mensaje después de un tiempo
+        setTimeout(() => {
+          successMessage?.classList.add("hidden");
+        }, 5000);
+      }, 1500);
+    }
+  });
+</script>
